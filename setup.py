@@ -3,8 +3,8 @@ import os
 import sys
 from setuptools.command.install import install
 
-# circleci.py version
-VERSION = "1.1.1"
+# dummyzarid version
+VERSION = "0.0.3"
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -27,7 +27,7 @@ class VerifyVersionCommand(install):
 
 setuptools.setup(
     name="dummyzarid",
-    version="0.0.2",
+    version=VERSION,
     author="Teamgeek",
     author_email="support@teamgeek.io",
     description="Generate dummy South African ID numbers",
@@ -40,7 +40,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_requires=["requests==2.18.4"],
+    install_requires=["requests==2.23.0"],
     python_requires=">=3.6",
     cmdclass={"verify": VerifyVersionCommand},
 )
