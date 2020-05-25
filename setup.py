@@ -27,7 +27,7 @@ class VerifyVersionCommand(install):
 
 setuptools.setup(
     name="dummyzarid",
-    version="0.0.1",
+    version="0.0.2",
     author="Teamgeek",
     author_email="support@teamgeek.io",
     description="Generate dummy South African ID numbers",
