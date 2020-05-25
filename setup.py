@@ -1,6 +1,7 @@
 import setuptools
 import os
 import sys
+from setuptools.command.install import install
 
 # circleci.py version
 VERSION = "1.1.1"
@@ -9,7 +10,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
-class VerifyVersionCommand(setuptools.command.install.install):
+class VerifyVersionCommand(install):
     """Custom command to verify that the git tag matches our version"""
 
     description = "verify that the git tag matches our version"
