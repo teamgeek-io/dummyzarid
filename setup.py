@@ -40,7 +40,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_requires=["requests==2.23.0"],
+    install_requires=["requests==2.31.0"],
     python_requires=">=3.6",
     cmdclass={"verify": VerifyVersionCommand},
 )
